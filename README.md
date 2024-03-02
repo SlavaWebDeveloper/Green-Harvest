@@ -39,26 +39,55 @@ To build a project, use:
 
 ## File Tree:
 green-harvest
-├── docs  
+├── src  
 │   ├── fonts  
 │   │   └── ...
 │   ├── images  
-│   │   ├── favicon  
-│   │   │   └── ...
 │   │   ├── carrot  
+│   │   │   └── ...
+│   │   ├── favicon  
 │   │   │   └── ...
 │   │   ├── team  
 │   │   │   └── ...
-│   │   └── ...
+│   │   └── ... 
 │   ├── scripts  
-│   │   └── main.min.js  
-│   │   └── main.min.js.map  
+│   │   └── ...
 │   ├── styles  
-│   │   └── style.min.css  
-│   │   └── style.min.css.map  
+│   │   ├── blocks  
+│   │   │   └── _about-us.scss  
+│   │   │   └── _banner.scss  
+│   │   │   └── _burger-menu.scss  
+│   │   │   └── _button.scss  
+│   │   │   └── _contact-us.scss  
+│   │   │   └── _field.scss  
+│   │   │   └── _footer.scss  
+│   │   │   └── _grid.scss  
+│   │   │   └── _header.scss  
+│   │   │   └── _hero.scss  
+│   │   │   └── _list.scss  
+│   │   │   └── _logo.scss  
+│   │   │   └── _nav.scss  
+│   │   │   └── _order-instructions.scss  
+│   │   │   └── _overlay.scss  
+│   │   │   └── _puddle-bg.scss  
+│   │   │   └── _section.scss  
+│   │   │   └── _soc1als.scss  
+│   │   │   └── _team.scss  
+│   │   │   └── _team__card.scss  
+│   │   │   └── _text-accent.scss  
+│   │   │   └── _vegetables.scss  
+│   │   │   └── _vegetables__card.scss  
+│   │   └── _fonts.scss  
+│   │   └── _globals.scss  
+│   │   └── _media.scss  
+│   │   └── _mixins.scss  
+│   │   └── _normalize.scss  
+│   │   └── _themes.scss  
+│   │   └── _utils.scss  
+│   │   └── _variables.scss 
+│   │   └── style.scss  
 │   └── index.html  
 └── .gitignore  
 └── gulpfile.js  
 └── package-lock.json  
 └── package.json  
-└── README.md  
