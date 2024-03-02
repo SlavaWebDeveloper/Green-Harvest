@@ -1,0 +1,40 @@
+.banner {
+
+  // .banner__inner
+  &__inner {
+  }
+
+  // .banner__body
+
+  &__body {
+  }
+
+  // .banner__description
+
+  &__description {
+    @include fluid-text(76, 48);
+
+    font-family: var(--font-family-base);
+    font-weight: 600;
+    line-height: 105%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: var(--color-dark);
+    padding-inline: 13px;
+
+    .puddle-bg {
+      display: inline-block;
+      margin-inline: -13px;
+    }
+
+    @include tablet {
+      @include fluid-text(64, 48);
+
+      line-height: 109%;
+    }
+
+    @include mobile-s {
+      line-height: 104%;
+    }
+  }
+}

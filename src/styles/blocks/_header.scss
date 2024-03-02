@@ -1,0 +1,99 @@
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  margin-inline: auto;
+  width: 100%;
+  padding-top: 32px;
+  transition: padding-top 0.3s ease-out ;
+
+  // .header__inner
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+    height: 52px;
+
+  }
+
+  // .header__logo
+
+  &__logo {
+
+		@include mobile-s {
+			z-index: 3;
+		}
+  }
+
+  // .header__logo-image
+
+  &__logo-image {
+    max-width: 194px;
+    width: 100%;
+  }
+
+  // .header__navigation
+
+  &__navigation {
+		--viewportWidth: 46vw;	 /* по макету на брейкпоинт 768 размер бокового меню = 351 / 768 */
+
+		transition: transform 0.5s ease-in-out;
+
+    @include tablet {
+      position: absolute;
+			z-index: 2;
+      height: 100vh;
+      width: var(--viewportWidth);
+      margin: 0 auto;
+      top: 0;
+      right: 0;
+			background-color: var(--color-purple);
+			transform: translateX(var(--viewportWidth));
+    }
+
+		@include mobile-s {
+			--viewportWidth: 100%;
+
+			width: var(--viewportWidth);
+			transform: translateX(var(--viewportWidth));
+		}
+
+		&_active {
+			transform: translateX(0);
+		}
+  }
+
+  // .header__nav
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+
+		@include tablet {
+			margin-top: auto;
+			flex-direction: column;
+			height: 100%;
+			justify-content: center;
+		}
+  }
+
+  // .header__button
+
+  &__button {
+    padding: 12px 32px;
+		
+		@include tablet {
+			margin-top: auto;
+			margin-bottom: 50px;
+			background-color: var(--color-light);
+			color: var(--color-purple);
+			font-size: 18px;
+		}
+  }
+}

@@ -1,0 +1,111 @@
+.order-instructions {
+
+  background: linear-gradient(
+    90deg,
+    var(--color-purple) 50%,
+    var(--color-green) 50%
+  );
+
+  @include tablet {
+    background: var(--color-green);
+  }
+
+  // .order-instructions__image-wrapper
+
+  &__image-wrapper {
+    padding: var(--grid-content-padding);
+    height: 100%;
+
+    @include tablet {
+      background-color: var(--color-purple);
+      padding: var(--grid-content-padding) 64px;
+    }
+
+    @include mobile-s {
+      padding: 40px var(--container-padding-x);
+    }
+  }
+
+  // .order-instructions__image
+
+  &__image {
+    @include filter;
+
+    border-radius: var(--border-radius);
+    object-fit: none;
+    object-position: 50% 25%;
+    width: 100%;
+
+    @include tablet {
+      max-width: 640px;
+      aspect-ratio: 1;
+      object-position: 50% 100%;
+    }
+
+    @include mobile-s-above {
+      height: 100%;
+    }
+  }
+
+  // .order-instructions__body
+
+  &__body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--color-green);
+    padding: var(--grid-content-padding);
+
+    @include tablet {
+      margin: auto;
+      max-width: 450px;
+      padding-inline: 0;
+    }
+
+    @include mobile-s {
+      padding: 80px var(--container-padding-x);
+    }
+  }
+
+  // .order-instructions__title
+
+  &__title {
+    @include fluid-text(32, 28);
+
+    font-family: var(--font-family-base);
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: var(--color-light);
+    margin-bottom: 25px;
+
+    @include mobile-s {
+      margin-bottom: 20px;
+    }
+  }
+
+  // .order-instructions__description
+
+  &__description {
+    @include fluid-text(16, 14);
+
+    font-family: var(--font-family-base);
+    font-weight: 500;
+    line-height: 1.25;
+    color: var(--color-light);
+    margin-bottom: 50px;
+
+    @include mobile-s {
+      margin-bottom: 40px;
+      line-height: 1.29;
+    }
+  }
+
+  // .order-instructions__list
+
+  &__list {
+    margin-bottom: 60px;
+  }
+}

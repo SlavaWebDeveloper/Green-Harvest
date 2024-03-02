@@ -1,0 +1,44 @@
+.team {
+  // .team__header
+
+  &__header {
+    max-width: 553px;
+  }
+
+  // .team__title
+
+  &__title {
+  }
+
+  // .team__description
+
+  &__description {
+    text-align: center;
+  }
+
+  // .team__list
+
+  &__list {
+    align-items: stretch;
+    display: flex;
+    column-gap: 25px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+
+    &::-webkit-scrollbar {
+      height: 21px;
+    }
+  
+    @include tablet {
+      column-gap: 18px;
+    }
+  }
+
+  // .team__item
+
+  &__item {
+    min-width: 343px;
+    scroll-snap-align: start;
+  }
+}

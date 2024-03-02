@@ -1,0 +1,63 @@
+.section {
+  padding-block: var(--section-padding-y);
+
+  // .section_while-bg
+
+  &_while-bg {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+  }
+
+  // .section_purple-bg
+
+  &_purple-bg {
+    background-color: var(--color-purple);
+    color: var(--color-light);
+  }
+
+  // .section__header
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    margin-bottom: 50px;
+
+    @include mobile-s {
+      row-gap: 20px;
+      margin-bottom: 40px;
+    }
+  }
+
+  // .section__title
+
+  &__title {
+    @include fluid-text(64, 48);
+
+    font-family: var(--font-family-base);
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: currentColor;
+
+    @include mobile-s {
+      line-height: 1.04;
+    }
+  }
+
+  // .section__description
+
+  &__description {
+    color: currentColor;
+
+    @include mobile-s {
+      line-height: 1.29;
+    }
+  }
+
+  // .section__body
+
+  &__body {
+  }
+}
