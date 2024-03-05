@@ -85,7 +85,7 @@ green-harvest
 │   │   └── _normalize.scss  
 │   │   └── _themes.scss  
 │   │   └── _utils.scss  
-│   │   └── _variables.scss 
+│   │   └── _variables.scss  
 │   └── index.html  
 └── .gitignore  
 └── gulpfile.js  
